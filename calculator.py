@@ -1,6 +1,15 @@
-# Basic calculator
-num1 = input("Enter a number: ")
-num2 = input("Enter another number:")
-result = float(num1) + float(num2)
+# Better calculator
+first_num = float(input("Enter first number: "))
+operator = input("Enter operator: ")
+second_num = float(input("Enter second number: "))
 
-print(result)
+if operator == "+":
+    print(first_num + second_num)
+elif operator == "-":
+    print(first_num - second_num)
+elif operator == "/":
+    print(first_num / second_num)
+elif operator == "*":
+    print(first_num * second_num)
+else:
+    print("You entered an invalid operator")
